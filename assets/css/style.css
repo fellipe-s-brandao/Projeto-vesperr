@@ -1,0 +1,14 @@
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+/*---------*/
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
