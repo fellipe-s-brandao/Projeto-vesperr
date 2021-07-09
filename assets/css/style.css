@@ -26,3 +26,8 @@
   flex-direction: row;
   
 }
+
+.collum{
+  display: flex;
+  flex-direction: column;
+}
