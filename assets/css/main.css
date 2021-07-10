@@ -57,7 +57,7 @@
 ------------------------*/
 /*faz a configuração do traço antes e depois do h2*/
 .linha {
-  margin: 60px 0;
+  margin: 60px 0 30px;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -109,13 +109,13 @@
 .images{
   display: flex;
   flex-direction: row ;
-  align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  justify-content: space-between; 
 }
 
 .single-img{
-  margin: 10px;
+  margin: 15px 0;
   width: 350px;
   cursor: pointer;
 }
@@ -124,7 +124,7 @@
   width: 350px;
   border-radius: 15px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  transition: all 0.4s;
+  transition: all 0.4s; 
 }
 
 .single-img img:hover{
@@ -137,13 +137,16 @@
 ------------------------*/
 
 .equipe{
+  justify-content: space-between;
   align-items: center;
   align-content: center;
 }
 
 .single-equi{
+  justify-content: space-between;
   padding: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin: 0 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   transition: all 0.4s;
   cursor: pointer;
@@ -165,7 +168,86 @@
 }
 
 .single-equi:hover{
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);;
+}
+
+/*------------------------|
+# Configuração da contato |
+-------------------------*/
+#contato div{
+  justify-content: space-between;
+}
+
+#contato p{
+  width: 450px;
+  color: #BEBEBE;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 7px;
+}
+
+#contato img{
+  transition: all 0.4s;
+}
+
+#contato img:hover{
+  filter: opacity(25%);
+}
+
+.media-social{
+  display: flex;
+  margin: 10px 0;
+}
+
+.media-social li a{
+  margin-right: 10px;
+}
+
+/*Informaçoes de contato*/
+
+.info ul li{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+}
+ .info img{
+   padding: 8px;
+ }
+
+/*fornulario para envio*/
+
+input{
+  margin-top: 10px;
+  width: 350px;
+  height: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1.5px #BEBEBE;
+  outline: none;
+}
+
+input:focus{
+  box-shadow: 0 0 0 1px #3498DB;
+}
+
+textarea{
+  margin-top: 10px;
+  max-width: 350px;
+  min-width: 350px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid 1.5px #BEBEBE;
+  outline: none;
+}
+
+textarea:focus{
+  box-shadow: 0 0 0 1px #3498DB;
+}
+
+.btn-enviar{
+  width: 50px;
 }
 /*------------------------------|
 # Configuração da seta rolagem  |
