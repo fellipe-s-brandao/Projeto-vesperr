@@ -11,14 +11,14 @@
 
 <body>
   <!--inicio do header-->
-  <header class="container">
-    <section class="row">
+  <header id="topo" class="container">
+    <section class="row menu">
       <h1>
-        <a href="#">Vasperr</a>
+        <a class="logo" href="#">Vasperr</a>
       </h1>
       <!--Criação do menu-->
       <nav>
-        <ul>
+        <ul class="row">
           <li>
             <a href="#inicio">Home</a>
           </li>
@@ -36,7 +36,7 @@
           </li>
 
           <li>
-            <a href="#">Contato</a>
+            <a href="#contato">Contato</a>
           </li>
       </nav>
       <!--Fim do menu-->
@@ -51,13 +51,15 @@
         <h1>Expanda seus negócios com Vesperr</h1>
         <h2>Somos uma equipe de designers talentosos que fazem sites para muitas empresas</h2>
 
-        <a href="#">Saiba mais</a>
+        <a class="btn-azul" href="#">Saiba mais</a>
       </div>
 
-      <img src="assets/images/hero-img.png" alt="Vasperr - Criação de Website">
+      <img  src="assets/images/hero-img.png" class="animation" alt="Vasperr - Criação de Website">
     </section>
 
-    <h1>Sobre nós</h1>
+    
+    <h2 class="linha">Sobre nós</h2>
+    
     <section id="sobre">
       <div class="row">
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas harum aperiam enim excepturi ipsa
@@ -70,7 +72,7 @@
       <img src="assets/images/counts-img.svg" alt="Somos os melhores">
     </section>
 
-    <h1>Nosso Portifólio</h1>
+    <h2 class="linha">Nosso Portifólio</h2>
     <section id="portifolio">
       <div class="row images">
         <img src="assets/images/portfolio-1.jpg" alt="">
@@ -82,7 +84,7 @@
       </div>
     </section>
 
-    <h1>Nosso time</h1>
+    <h2 class="linha">Nosso time</h2>
     <section id="time">
       <div class="row equipe">
         <img src="assets/images/team-1.jpg" alt="">
@@ -96,7 +98,7 @@
       </div>
     </section>
 
-    <h1>Nosso Contato</h1>
+    <h2 class="linha">Nosso Contato</h2>
     <section id="contato">
       <div class="row ">
         <div>
@@ -136,6 +138,9 @@
         </div>
       </div>
     </section>
+    <div class="seta">
+      <a href="#topo"><img src="assets/images/seta (1).svg" alt=""></a>
+    </div>
   </main>
   <!--Fim do container-->
 

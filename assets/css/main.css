@@ -1,0 +1,111 @@
+/*faz a animação da imagem */
+@keyframes down {
+  0%{
+    transform: translate(0, 20px);
+  }
+
+  100%{
+    transform: translate(0, 0);
+  }
+}
+
+/*-----------------------|
+# Configuração do inicio |
+------------------------*/
+
+#inicio{
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#inicio div{
+  width: 500px;
+}
+
+#inicio div h1, h2{
+  margin: 10px 0px;
+}
+
+.btn-azul{
+  display: inline-block;
+  margin: 15px 0px;
+  border: solid 2px #3498DB;
+  padding: 9px 25px;
+  border-radius: 25px;
+
+  color: #3498DB;
+  font-weight: 600;
+  font-size: 17px;
+
+  transition: all 0.4s;
+}
+
+.btn-azul:hover{
+  background: #3498DB;
+  color: white;
+}
+
+/*faz a animação da imagem */
+.animation{
+  position: relative;
+  animation: down 2s infinite alternate-reverse;
+}
+
+/*-----------------------|
+# Configuração do Sobre  |
+------------------------*/
+/*faz a configuração do traço antes e depois do h2*/
+.linha {
+  margin: 60px 0;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+  
+.linha:before, .linha:after {
+  content: '';
+  width: 50px;
+  height: 2px;
+  background: #3498db;
+  display: inline-block;
+}
+
+.linha:before{
+  margin: 0 15px 10px 0;
+}
+
+.linha::after{
+  margin: 0 0 10px 15px;
+}
+
+#sobre div{
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#sobre div p{
+  width: 600px;
+}
+
+
+/*------------------------------|
+# Configuração da seta rolagem  |
+-------------------------------*/
+
+.seta{
+  position: fixed;
+  right: 80px;
+  bottom: 30px;
+  border-radius: 100%;
+}
+
+.seta img{
+  width: 47px;
+  transition: all 0.4s;
+}
+
+.seta img:hover{
+  filter: sepia(60%);
+}

@@ -1,6 +1,10 @@
 /*Fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 /*---------*/
+/*componentes*/
+@import "./header.css";
+@import "./main.css";
+/*--------*/
 
 *{
   margin: 0;
@@ -11,10 +15,15 @@
   vertical-align: baseline;
   text-decoration: none;
   list-style: none;
+  color: #222222;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 .container{
-  width: 1400px;
+  width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -31,3 +40,15 @@
   display: flex;
   flex-direction: column;
 }
+
+h1{
+  font-weight: 700;
+  font-size: 40px;
+}
+
+h2{
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);;
+}
+
