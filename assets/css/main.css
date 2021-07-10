@@ -117,19 +117,56 @@
 .single-img{
   margin: 10px;
   width: 350px;
+  cursor: pointer;
 }
 
 .single-img img{
   width: 350px;
   border-radius: 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.4s;
 }
 
 .single-img img:hover{
   opacity: 0.3;
-
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);;
 }
 
+/*-----------------------|
+# Configuração da Equipe |
+------------------------*/
+
+.equipe{
+  align-items: center;
+  align-content: center;
+}
+
+.single-equi{
+  padding: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+.single-equi img{
+  width: 250px;
+  border-radius: 10px;
+}
+
+.single-equi h2,h3{
+  text-align: center;
+}
+
+.single-equi h3{
+  font-size: 15px;
+  font-weight: 500;
+  color: lightgray;
+}
+
+.single-equi:hover{
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);;
+}
 /*------------------------------|
 # Configuração da seta rolagem  |
 -------------------------------*/
